@@ -1,4 +1,47 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #dadada;
   font-size: 10px;
+}
+
+.container {
+  margin: 20px auto;
+  width: 90%;
+}
+
+/* code for one-column design */
+div {
+  float: left;
+  margin: 1% 0;
+  width: 100%;
+  padding: 20px 25px;
+}
+
+/* code for two-column design (for tablets +) */
+@media screen and (min-width: 575px){
+   div {
+    margin: 1%;
+    width: 48%;
+  }
+}
+
+/* code for four-column design (for laptops +) */
+@media screen and (min-width: 991px){
+   div {
+    margin: 1%;
+    width: 23%;
+  }
+}
+
+h1 {
+  font-size: 3em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
